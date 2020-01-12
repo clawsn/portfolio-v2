@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react';
 import './assets/stylesheets/global.css';
+import "antd/dist/antd.css";
 import Header from './Components/Header/Header'
 
 function App() {

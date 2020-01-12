@@ -1,9 +1,14 @@
 import styled from 'styled-components';
 // we create the style for the element we are trying to reach
 const HeaderStyles = styled.div`
-    border: 1px solid orange;
+    section#top {
+        background-color: blue;
+        margin: 20px;
+        .container.section-padding {
+            padding: 20px;
+        }
+    }
 
-    
 /*     
     @media (min-width: 649px) {
     }
