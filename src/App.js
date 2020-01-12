@@ -7,6 +7,30 @@ function App() {
     return (
         <Fragment>
             <Header />
+            <section
+                style= {{
+                    backgroundColor: "orange",
+                    height: "100vh",
+                    margin: "0 20px"
+                }}
+            >
+            </section>
+            <section
+                style= {{
+                    backgroundColor: "red",
+                    height: "100vh",
+                    margin: "20px"
+                }}
+            >
+            </section>
+            <section
+                style= {{
+                    backgroundColor: "green",
+                    height: "100vh",
+                    margin: "20px"
+                }}
+            >
+            </section>
         </Fragment>
     );
 }
