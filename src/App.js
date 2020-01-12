@@ -1,12 +1,12 @@
-import React from 'react';
-import './App.css';
+import React, { Fragment } from 'react';
+import './assets/stylesheets/global.css';
 
 function App() {
-  return (
-    <div className="App">
-      HELLO
-    </div>
-  );
+    return (
+        <Fragment>
+            
+        </Fragment>
+    );
 }
 
 export default App;
