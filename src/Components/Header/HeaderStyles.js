@@ -5,7 +5,7 @@ const HeaderStyles = styled.div`
     section#top {
         position: relative;
         background-color: blue;
-        margin: 20px;
+        margin: 20px 20px 0 20px;
         height: 100vh;
         .container.section-padding {
             padding: 20px;
@@ -94,27 +94,6 @@ const HeaderStyles = styled.div`
                         left: -160px;
                     }
                 }
-            }
-            .profile-bg {
-                background-image: url(${ProfilePic});
-                height: 100vh;
-                background-size: cover;
-                max-width: 40%;
-                position: absolute;
-                width: 100%;
-                top: 0;
-                right: 0;
-                #triangle-container {
-                    /* THIS IS THE MAGIC: using the directional keywords instead
-                        of an angle in the linear gradient property*/
-                    background-image: linear-gradient(to right top, blue 0%, blue 50%, transparent 50%);
-                    position: absolute;
-                    width: 30%;
-                    height: 100%;
-                    top: 0;
-                    left: 0;
-                }
-
             }
         }
     }
