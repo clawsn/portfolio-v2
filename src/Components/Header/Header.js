@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { HeaderStyles } from './HeaderStyles';
-import { Typography } from 'antd';
-
+import { Typography, Row, Col } from 'antd';
+// import ProfilePic from '../../assets/images/me.jpg';
 const { Title } = Typography;
 
 
@@ -24,17 +24,20 @@ class Header extends Component {
                                 <span></span>
                             </div>
                         </div>
-                        <div className="jumbo-text-wrap">
-                            <div className="jumbo-text">
-                                <Title>
-                                    <span className="little">HI, my name is Kyle Clausen</span>
-                                    <span className="big">Front-end</span> 
-                                    <span className="big">Software Engineer</span>
-                                    
-                                </Title>
-                            <div className="line-left"></div>
+                            <div className="jumbo-wrap">
+                                <div className="jumbo-text">
+                                    <Title>
+                                        <span className="little">HI, my name is Kyle Clausen</span>
+                                        <span className="big">Front-end</span> 
+                                        <span className="big">Software Engineer</span>
+                                        
+                                    </Title>
+                                <div className="line-left"></div>
+                                </div>
+                                <div className="profile-bg"><div id="triangle-container"></div></div>
                             </div>
-                        </div>
+                        
+                        
                     </div>
                 </section>
             </HeaderStyles>

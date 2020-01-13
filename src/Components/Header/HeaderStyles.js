@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import ProfilePic from '../../assets/images/me.jpg';
 // we create the style for the element we are trying to reach
 const HeaderStyles = styled.div`
     section#top {
@@ -50,7 +51,7 @@ const HeaderStyles = styled.div`
                     }
                 }
             }
-            .jumbo-text-wrap {
+            .jumbo-wrap {
                 display: flex;
                 align-items: center;
                 justify-content: left;
@@ -93,6 +94,27 @@ const HeaderStyles = styled.div`
                         left: -160px;
                     }
                 }
+            }
+            .profile-bg {
+                background-image: url(${ProfilePic});
+                height: 100vh;
+                background-size: cover;
+                max-width: 40%;
+                position: absolute;
+                width: 100%;
+                top: 0;
+                right: 0;
+                #triangle-container {
+                    /* THIS IS THE MAGIC: using the directional keywords instead
+                        of an angle in the linear gradient property*/
+                    background-image: linear-gradient(to right top, blue 0%, blue 50%, transparent 50%);
+                    position: absolute;
+                    width: 30%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                }
+
             }
         }
     }
