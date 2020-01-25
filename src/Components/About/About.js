@@ -14,7 +14,6 @@ class About extends Component {
                 <section>
                     <div className="container section-padding">
                             <SceneOne />
-                        
                     </div>
                 </section>
             </AboutStyles>
@@ -33,39 +32,11 @@ const SceneOne = () => {
             <div className="image"></div>
             </div>
         <div className="profile-body">
-            <Title>HELLO</Title>
-            <Paragraph>
-            Ant Design, a design language for background applications, is refined by Ant UED Team. Ant
-            Design, a design language for background applications, is refined by Ant UED Team. Ant Design,
-            a design language for background applications, is refined by Ant UED Team. Ant Design, a
-            design language for background applications, is refined by Ant UED Team. Ant Design, a design
-            language for background applications, is refined by Ant UED Team. Ant Design, a design
-            language for background applications, is refined by Ant UED Team.
-            </Paragraph>
-            <Paragraph>
-            Ant Design, a design language for background applications, is refined by Ant UED Team. Ant
-            Design, a design language for background applications, is refined by Ant UED Team. Ant Design,
-            a design language for background applications, is refined by Ant UED Team. Ant Design, a
-            design language for background applications, is refined by Ant UED Team. Ant Design, a design
-            language for background applications, is refined by Ant UED Team. Ant Design, a design
-            language for background applications, is refined by Ant UED Team.
-            </Paragraph>
-            <Paragraph>
-            Ant Design, a design language for background applications, is refined by Ant UED Team. Ant
-            Design, a design language for background applications, is refined by Ant UED Team. Ant Design,
-            a design language for background applications, is refined by Ant UED Team. Ant Design, a
-            design language for background applications, is refined by Ant UED Team. Ant Design, a design
-            language for background applications, is refined by Ant UED Team. Ant Design, a design
-            language for background applications, is refined by Ant UED Team.
-            </Paragraph>
-            <Paragraph>
-            Ant Design, a design language for background applications, is refined by Ant UED Team. Ant
-            Design, a design language for background applications, is refined by Ant UED Team. Ant Design,
-            a design language for background applications, is refined by Ant UED Team. Ant Design, a
-            design language for background applications, is refined by Ant UED Team. Ant Design, a design
-            language for background applications, is refined by Ant UED Team. Ant Design, a design
-            language for background applications, is refined by Ant UED Team.
-            </Paragraph>
+            <div className="numbers two">
+                <Title>
+                    02.
+                </Title>
+            </div>
         </div>
     </div>
         

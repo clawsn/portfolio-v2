@@ -52,7 +52,7 @@ const HeaderStyles = styled.div`
                 }
             }
             .jumbo-wrap {
-                display: flex;
+                /* display: flex;
                 align-items: center;
                 justify-content: left;
                 height: 100vh;
@@ -93,7 +93,21 @@ const HeaderStyles = styled.div`
                         position: relative;
                         left: -160px;
                     }
-                }
+                } */
+            }
+            
+        }
+        .numbers.one {
+            position: relative;
+            right: 120px;
+            top: -120px;
+            h1 {
+                font-size: 260px;
+                margin: 0;
+                color: #fff;
+            }
+            @media (min-width: 940px) {
+                position: absolute;
             }
         }
     }
