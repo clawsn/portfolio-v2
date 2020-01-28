@@ -35,6 +35,8 @@ const AboutStyles = styled.div`
                     position: relative;
                     background-color: #f1f1f1;
                     padding: 150px 20px 20px 20px;
+                    overflow: hidden;
+                    height: 100vh
                 }
             }
             .profile-wrap.animated {
@@ -43,6 +45,19 @@ const AboutStyles = styled.div`
                     padding: 20px;
                     box-shadow: none;
                 }
+            }
+        }
+        .numbers.two {
+            position: relative;
+            right: 120px;
+            top: -120px;
+            h1 {
+                font-size: 260px;
+                margin: 0;
+                color: #fff;
+            }
+            @media (min-width: 940px) {
+                position: absolute;
             }
         }
    }

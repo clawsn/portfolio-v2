@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { HeaderStyles } from './HeaderStyles';
 import { Typography, Row, Col } from 'antd';
 import {useSpring, animated} from 'react-spring'
+import SideNav from "../SideNav/SideNav"
 // import ProfilePic from '../../assets/images/me.jpg';
 const { Title } = Typography;
 
@@ -24,15 +25,18 @@ class Header extends Component {
                                 <span></span>
                             </div>
                         </div>
-                            <div className="jumbo-wrap">
-                                <div className="jumbo-text">
-                                    <Text />
-                                    
-                                <div className="line-left"></div>
-                                </div>
+                        <div className="jumbo-wrap">
+                            <div className="jumbo-text">
+                                <Text />
+                            <div className="line-left"></div>
                             </div>
-                        
-                        
+                        </div>
+                    </div>
+                    <SideNav />
+                    <div className="numbers one">
+                        <Title>
+                            01.
+                        </Title>
                     </div>
                 </section>
             </HeaderStyles>
@@ -44,9 +48,9 @@ const Text = () => {
     return (
     <animated.div style={props}>
         <Title>
-            <span className="little">HI, my name is Kyle Clausen</span>
+            {/* <span className="little">HI, my name is Kyle Clausen</span>
             <span className="big">Front-end</span> 
-            <span className="big">Software Engineer</span>
+            <span className="big">Software Engineer</span> */}
         </Title>
     </animated.div>
     )
