@@ -1,7 +1,25 @@
 import styled from 'styled-components';
 import ProfilePic from '../../assets/images/me.jpg';
 const AboutStyles = styled.div`
-   section {
+   section#about-intro {
+    main {
+            position: relative;
+            height: 100%;
+            .box {
+                background-color: #0E0E2D;
+                height: 100%;
+                width: 100%;
+                padding: 1rem 1.5rem;
+                .text, h1 {
+                    color: #fff;
+                }
+            }
+        }
+        @media (min-width: 940px) {
+            main {
+            }
+        }
+        
         position: relative;
         .container {
             .profile-wrap {
@@ -33,7 +51,7 @@ const AboutStyles = styled.div`
                 }
                 .profile-body {
                     position: relative;
-                    background-color: #f1f1f1;
+                    background-color: #161748;
                     padding: 150px 20px 20px 20px;
                     overflow: hidden;
                     height: 100vh

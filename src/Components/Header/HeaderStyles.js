@@ -52,7 +52,7 @@ const HeaderStyles = styled.div`
                 }
             }
             .jumbo-wrap {
-                /* display: flex;
+                display: flex;
                 align-items: center;
                 justify-content: left;
                 height: 100vh;
@@ -93,7 +93,13 @@ const HeaderStyles = styled.div`
                         position: relative;
                         left: -160px;
                     }
-                } */
+                }
+                .bubble {
+                    height: 30px;
+                    width: 30px;
+                    background-color: #478559;
+                    border-radius: 50%;
+                }
             }
             
         }

@@ -46,9 +46,9 @@ const Text = () => {
     return (
     <animated.div style={props}>
         <Title>
-            {/* <span className="little">HI, my name is Kyle Clausen</span>
+            <span className="little">HI, my name is Kyle Clausen</span>
             <span className="big">Front-end</span> 
-            <span className="big">Software Engineer</span> */}
+            <span className="big">Software Engineer</span>
         </Title>
     </animated.div>
     )

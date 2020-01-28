@@ -3,7 +3,7 @@ import styled from 'styled-components';
 const PortfolioStyles = styled.div`
     section#portfolio-intro {
         position: relative;
-        background-color: orange;
+        background-color: #161748;
         overflow: hidden;
         height: 100vh;
         margin: 20px;
@@ -18,6 +18,21 @@ const PortfolioStyles = styled.div`
             }
             @media (min-width: 940px) {
                 position: absolute;
+            }
+        }
+        main {
+            position: relative;
+            margin-top: -120px;
+            height: 100%;
+            .box {
+                background-color: #0E0E2D;
+                height: 300px;
+                width: 100%;
+            }
+        }
+        @media (min-width: 940px) {
+            main {
+                margin-top: 200px;
             }
         }
     }

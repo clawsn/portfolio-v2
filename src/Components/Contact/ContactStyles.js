@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const ContactStyles = styled.div`
     section#contact-intro {
         position: relative;
-        background-color: green;
+        background-color: #161748;
         overflow: hidden;
         height: 100vh;
         margin: 20px;
