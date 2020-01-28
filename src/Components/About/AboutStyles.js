@@ -18,7 +18,7 @@ const AboutStyles = styled.div`
                     padding: 0px;
                     background: #fff;
                     border-radius: 50%;
-                    box-shadow: 0px -20px 60px rgba(34,34,34,.4);
+                    box-shadow: 20px -20px 0px #f95d9b;
                     transition: .6s all ease-in-out;
                     .image {
                         width: 100%;

@@ -4,7 +4,7 @@ import ProfilePic from '../../assets/images/me.jpg';
 const HeaderStyles = styled.div`
     section#top {
         position: relative;
-        background-color: blue;
+        background-color: #161748;
         margin: 20px 20px 0 20px;
         height: 100vh;
         .container.section-padding {

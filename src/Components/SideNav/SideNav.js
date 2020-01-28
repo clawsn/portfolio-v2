@@ -1,43 +1,44 @@
 import React, { Component } from 'react';
 import { SideNavStyles } from './SideNavStyles';
-import { Typography, Row, Col } from 'antd';
+import { Typography, Row, Col, Button } from 'antd';
 import {useSpring, animated} from 'react-spring'
-// import ProfilePic from '../../assets/images/me.jpg';
+import scrollToComponent from 'react-scroll-to-component';
+
 const { Title } = Typography;
 
 class SideNav extends Component {
-    
     render() {
         return (
             <SideNavStyles>
                 <div id="side-nav-scroll">
                     <ul>
-                        <li>
-                            <a href="#0">
+                        <li className="side-nav-item">
+                            <button>
                                 <span>01.</span> 
-                                <span> Intro</span>
-                            </a>
+                                {/* <span> Intro</span> */}
+                            </button>
                         </li>
-                        <li>
-                            <a href="#0">
-                                <span>02.</span> 
-                                <span> About</span>
-                            </a>
+                        <li className="side-nav-item">
+                            <button>
+                            <span>02.</span> 
+                            {/* <span> About</span> */}
+                            </button>
                         </li>
-                        <li>
-                            <a href="#0">
-                                <span>03.</span> 
-                                <span> Portfolio</span>
-                            </a>
+                        <li className="side-nav-item">
+                            <button>
+                            <span>03.</span> 
+                            {/* <span> Portfolio</span> */}
+                            </button>
                         </li>
-                        <li>
-                            <a href="#0">
-                                <span>04.</span> 
-                                <span> Contact</span>
-                            </a>
+                        <li className="side-nav-item">
+                            <button>
+                            <span>04.</span> 
+                            {/* <span> Contact</span> */}
+                            </button>
                         </li>
                     </ul>
                 </div>
+                
             </SideNavStyles>
         );
     }

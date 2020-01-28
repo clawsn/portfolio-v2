@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 // we create the style for the element we are trying to reach
 const PortfolioStyles = styled.div`
-    section#portfolio {
+    section#portfolio-intro {
         position: relative;
         background-color: orange;
         overflow: hidden;

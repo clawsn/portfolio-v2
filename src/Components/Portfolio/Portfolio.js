@@ -9,7 +9,7 @@ class Portfolio extends Component {
     render() {
         return (
             <PortfolioStyles>
-                <section id="portfolio">
+                <section id="portfolio-intro">
                     <div className="numbers three">
                         <Title>03.</Title>
                     </div>

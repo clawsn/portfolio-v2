@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 // we create the style for the element we are trying to reach
 const ContactStyles = styled.div`
-    section#portfolio {
+    section#contact-intro {
         position: relative;
         background-color: green;
         overflow: hidden;

@@ -11,7 +11,7 @@ class About extends Component {
     render() {
         return (
             <AboutStyles>
-                <section>
+                <section id="about-intro" ref={this.myDivToFocus}>
                     <div className="container section-padding">
                             <SceneOne />
                     </div>
@@ -31,13 +31,13 @@ const SceneOne = () => {
             <div className={`profile-image ${inView ? 'animated' : ''}`} ref={ref}>
             <div className="image"></div>
             </div>
-        <div className="profile-body">
-            <div className="numbers two">
-                <Title>
-                    02.
-                </Title>
+            <div className="profile-body">
+                <div className="numbers two">
+                    <Title>
+                        02.
+                    </Title>
+                </div>
             </div>
-        </div>
     </div>
         
     )

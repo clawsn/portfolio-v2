@@ -15,17 +15,20 @@ const SideNavStyles = styled.div`
             padding: 0;
             border-left: 20px solid #fff;
             li {
-                a {
+                button {
                     display: block;
                     width: 100%;
                     color: #fff;
                     font-size: 22px;
                     padding: .5rem 1rem;
+                    background-color: transparent;
+                    border: none;
                     span{
                         &:nth-of-type(1) {
+
                         }
                         &:nth-of-type(2) {
-                            display: none;
+                            
                         }
                     }
                 }

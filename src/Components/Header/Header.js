@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { HeaderStyles } from './HeaderStyles';
 import { Typography, Row, Col } from 'antd';
 import {useSpring, animated} from 'react-spring'
-import SideNav from "../SideNav/SideNav"
 // import ProfilePic from '../../assets/images/me.jpg';
 const { Title } = Typography;
 
@@ -32,7 +31,6 @@ class Header extends Component {
                             </div>
                         </div>
                     </div>
-                    <SideNav />
                     <div className="numbers one">
                         <Title>
                             01.
