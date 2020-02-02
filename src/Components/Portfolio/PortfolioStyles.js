@@ -10,7 +10,7 @@ const PortfolioStyles = styled.div`
         .numbers.three {
             position: relative;
             right: 120px;
-            top: -120px;
+            top: -200px;
             h1 {
                 font-size: 260px;
                 margin: 0;

@@ -2,9 +2,13 @@ import styled from 'styled-components';
 import ProfilePic from '../../assets/images/me.jpg';
 const AboutStyles = styled.div`
    section#about-intro {
-    main {
+    background-color: #fff;
+    position: relative;
+        height: 100vh;
+        main {
             position: relative;
             height: 100%;
+            
             .box {
                 background-color: #0E0E2D;
                 height: 100%;
@@ -15,24 +19,15 @@ const AboutStyles = styled.div`
                 }
             }
         }
-        @media (min-width: 940px) {
-            main {
-            }
-        }
-        
-        position: relative;
         .container {
             .profile-wrap {
-                margin: -200px 20px 0 20px;
                 transition: .6s all ease-in-out;
                 .profile-image {
                     position: relative;
-                    margin-bottom: -200px;
                     margin-left: auto;
                     margin-right: auto;
                     z-index: 99;
-                    width: 400px;
-                    height: 400px;
+                    width: 100%;
                     padding: 0px;
                     background: #fff;
                     border-radius: 50%;
@@ -52,13 +47,12 @@ const AboutStyles = styled.div`
                 .profile-body {
                     position: relative;
                     background-color: #161748;
-                    padding: 150px 20px 20px 20px;
                     overflow: hidden;
                     height: 100vh
+                    padding-top: 200px;
                 }
             }
             .profile-wrap.animated {
-                margin: -180px 20px 0 20px;
                 .profile-image {
                     padding: 20px;
                     box-shadow: none;
@@ -68,7 +62,9 @@ const AboutStyles = styled.div`
         .numbers.two {
             position: relative;
             right: 120px;
-            top: -120px;
+            top: -200px;
+            transition: 1s all ease-in-out;
+            height: 100vh;
             h1 {
                 font-size: 260px;
                 margin: 0;
@@ -76,6 +72,36 @@ const AboutStyles = styled.div`
             }
             @media (min-width: 940px) {
                 position: absolute;
+            }
+        }
+        .numbers.two.animated {
+            margin-top: 70px;
+        }
+        @media (max-width: 939px) {
+            .profile-wrap {
+                margin: -160px 20px 0 20px;
+                .profile-image {
+                    margin-bottom: -150px;
+                    max-width: 300px;
+                    height: 300px;
+                }
+            }
+            .profile-wrap.animated {
+                margin: -130px 20px 0 20px;
+            }
+
+        }
+        @media (min-width: 940px) {
+            .profile-wrap {
+                margin: -200px 20px 0 20px;
+                .profile-image {
+                    margin-bottom: -200px;
+                    max-width: 400px;
+                    height: 400px;
+                }
+            }
+            .profile-wrap.animated {
+                margin: -180px 20px 0 20px;
             }
         }
    }

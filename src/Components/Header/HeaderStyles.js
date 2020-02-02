@@ -63,8 +63,6 @@ const HeaderStyles = styled.div`
                 left: 0;
                 padding: 0 160px;
                 .jumbo-text {
-                    display: flex;
-                    flex-direction: row-reverse;
                     h1 {
                         color: #fff;
                         text-transform: uppercase;
@@ -106,7 +104,7 @@ const HeaderStyles = styled.div`
         .numbers.one {
             position: relative;
             right: 120px;
-            top: -120px;
+            top: -200px;
             h1 {
                 font-size: 260px;
                 margin: 0;
@@ -114,6 +112,17 @@ const HeaderStyles = styled.div`
             }
             @media (min-width: 940px) {
                 position: absolute;
+            }
+        }
+        @media (max-width: 939px) {
+            .jumbo-text {
+                display: none;
+            }
+        }
+        @media (min-width: 940px) {
+            .jumbo-text {
+                display: flex;
+                flex-direction: row-reverse;
             }
         }
     }

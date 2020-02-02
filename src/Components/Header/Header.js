@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { HeaderStyles } from './HeaderStyles';
 import { Typography, Row, Col } from 'antd';
 import {useSpring, animated} from 'react-spring'
+import {Spring} from 'react-spring/renderprops'
 // import ProfilePic from '../../assets/images/me.jpg';
 const { Title } = Typography;
 
@@ -31,18 +32,32 @@ class Header extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="numbers one">
+                    <Spring
+                from={{
+                  // Start invisible and offscreen
+                  opacity: 0, marginTop: -1000,
+                }}
+                to={{
+                  // End fully visible and in the middle of the screen
+                  opacity: 1, marginTop: 0,
+                }}
+              >
+                { props => (
+                  // The actual box that slides down
+                    <div className="numbers one" style={ props }>
                         <Title>
                             01.
                         </Title>
                     </div>
+              )}
+            </Spring>
                 </section>
             </HeaderStyles>
         );
     }
 }
 const Text = () => {
-    const props = useSpring({opacity: 1, from: {opacity: 0}})
+    const props = useSpring({marginTop: 1, from: {opacity: 0}})
     return (
     <animated.div style={props}>
         <Title>
@@ -50,6 +65,15 @@ const Text = () => {
             <span className="big">Front-end</span> 
             <span className="big">Software Engineer</span>
         </Title>
+    </animated.div>
+    )
+}
+
+const NumAnimation = () => {
+    const props = useSpring({opacity: 1, from: {opacity: 0}})
+    return (
+    <animated.div style={props}>
+        
     </animated.div>
     )
 }

@@ -33,16 +33,12 @@ const SceneOne = () => {
             <div className="image"></div>
             </div>
             <div className="profile-body">
-                <div className="numbers two">
-                    <Title>
-                        02.
-                    </Title>
-                </div>
+                <NumAnimated />
                 <Content>
                     <Row type="flex" justify="center" gutter={[16, 16]}>
                         <Col xs={{ span: 24 }} lg={{ span: 8 }}>
                             <div className="box">
-                            <Title level={1}>h2. Ant Design</Title>
+                            <Title level={1}> Kyle Clausen</Title>
                             <Paragraph className="text">
                     Ant Design, a design language for background applications, is refined by Ant UED Team. Ant
                     Design, a design language for background applications, is refined by Ant UED Team. Ant Design,
@@ -63,6 +59,21 @@ const SceneOne = () => {
                 </Content>
             </div>
     </div>
+        
+    )
+}
+const NumAnimated = () => {
+    const [ref, inView, entry] = useInView({
+        rootMargin: '-300px 0px',
+        threshold: 0,
+    })
+
+    return (
+        <div className={`numbers two ${inView ? 'animated' : ''}`} ref={ref}>
+            <Title>
+                02.
+            </Title>
+        </div>
         
     )
 }
