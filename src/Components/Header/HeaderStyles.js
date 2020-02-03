@@ -17,39 +17,23 @@ const HeaderStyles = styled.div`
             #logo {
                 flex-grow: 1;
                 h3 {
+                    margin: 0;
                     a {
                         color: #fff;
                         text-transform: uppercase;
                     }
                 }
             }
-                #menu-btn {
-                    cursor: pointer;
-                    span {
-                        background-color: #fff;
-                        display: block;
-                        height: 4px;
-                        border-radius: 4px;
-                        margin-bottom: 6px;
-                        margin-left: auto;
-                        transition: .2s all ease-in-out;
-                        box-shadow: 0px 0px 6px rgba(34,34,34,.4);
-                        &:nth-child(1) {
-                            width: 40px;
-                        }
-                        &:nth-child(2) {
-                            width: 30px;
-                        }
-                        &:nth-child(3) {
-                            width: 20px;
-                        }
-                    }
+            #resume-btn {
+                button {
+                    border-radius: 0;
+                    color: white;
                     &:hover {
-                        span {
-                            width: 40px;
-                        }
+                        border: 1px solid rgba(255,255,255,.4);
+                        background-color: rgba(255,255,255,.1) !important;
                     }
                 }
+            }
             }
             .jumbo-wrap {
                 display: flex;

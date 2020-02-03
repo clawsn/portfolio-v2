@@ -13,7 +13,7 @@ class SideNav extends Component {
                 <div id="side-nav-scroll">
                     <ul>
                         <li className="side-nav-item">
-                            <button>
+                            <button onClick={() => scrollToComponent(this.intro, { offset: 100, align: 'top', duration: 1500})}>
                                 <span>01.</span> 
                                 {/* <span> Intro</span> */}
                             </button>
