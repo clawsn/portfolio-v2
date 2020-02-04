@@ -13,7 +13,9 @@ class About extends Component {
             <AboutStyles>
                 <Layout id="about-intro" ref={this.myDivToFocus}>
                     <div className="container section-padding">
-                            <SceneOne />
+                            <SceneOne 
+                                triggerOnce
+                            />
                             
                     </div>
                 </Layout>
@@ -40,13 +42,13 @@ const SceneOne = () => {
                             <div className="box">
                             <Title level={1}> Kyle Clausen</Title>
                             <Paragraph className="text">
-                    Ant Design, a design language for background applications, is refined by Ant UED Team. Ant
-                    Design, a design language for background applications, is refined by Ant UED Team. Ant Design,
-                    a design language for background applications, is refined by Ant UED Team. Ant Design, a
-                    design language for background applications, is refined by Ant UED Team. Ant Design, a design
-                    language for background applications, is refined by Ant UED Team. Ant Design, a design
-                    language for background applications, is refined by Ant UED Team.
-                    </Paragraph>
+                            Ant Design, a design language for background applications, is refined by Ant UED Team. Ant
+                            Design, a design language for background applications, is refined by Ant UED Team. Ant Design,
+                            a design language for background applications, is refined by Ant UED Team. Ant Design, a
+                            design language for background applications, is refined by Ant UED Team. Ant Design, a design
+                            language for background applications, is refined by Ant UED Team. Ant Design, a design
+                            language for background applications, is refined by Ant UED Team.
+                            </Paragraph>
                             </div>
                         </Col>
                         <Col xs={{ span: 24 }} lg={{ span: 4 }}>

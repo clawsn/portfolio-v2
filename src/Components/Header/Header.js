@@ -45,7 +45,7 @@ const Text = () => {
         <Title>
             <span className="little">HI, my name is Kyle Clausen</span>
             <span className="big">Front-end</span> 
-            <span className="big">Software Engineer</span>
+            <span className="big">Developer</span>
         </Title>
     </animated.div>
     )

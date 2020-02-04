@@ -75,7 +75,7 @@ const AboutStyles = styled.div`
             }
         }
         .numbers.two.animated {
-            margin-top: 70px;
+            margin-top: 0px;
         }
         @media (max-width: 939px) {
             .profile-wrap {

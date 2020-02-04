@@ -23,6 +23,7 @@ const SideNavStyles = styled.div`
                     padding: .5rem 1rem;
                     background-color: transparent;
                     border: none;
+                    font-family: 'Open Sans', sans-serif;
                     span{
                         &:nth-of-type(1) {
 

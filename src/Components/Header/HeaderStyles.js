@@ -18,6 +18,7 @@ const HeaderStyles = styled.div`
                 flex-grow: 1;
                 h3 {
                     margin: 0;
+                    font-family: 'DM Sans', sans-serif;
                     a {
                         color: #fff;
                         text-transform: uppercase;
@@ -45,15 +46,18 @@ const HeaderStyles = styled.div`
                 bottom: 0;
                 right: 0;
                 left: 0;
-                padding: 0 160px;
                 .jumbo-text {
                     h1 {
                         color: #fff;
                         text-transform: uppercase;
                         line-height: 1;
                         margin: 0;
+                        position: relative;
+                        font-family: 'DM Sans', sans-serif;
                         span {
                             display: block;
+                            position: relative;
+                            z-index: 999;
                             &:nth-child(1) {
                                 font-size: 2rem;
                                 padding-left: 6px;
@@ -64,10 +68,20 @@ const HeaderStyles = styled.div`
                                 font-size: 6rem;
                             }
                             &:nth-child(3) {
-                                font-size: 4rem;
+                                font-size: 5rem;
                             }
                         }
-                    
+                        
+                        &:after {
+                            content: '';
+                            background-color: #39a0ca;
+                            position: absolute;
+                            height: 40px;
+                            width: 200px;
+                            top: -5px;
+                            right: 110px;
+                            transform: rotate(6deg);
+                        }
                     }
                     .line-left {
                         background-color: #fff;
@@ -99,15 +113,20 @@ const HeaderStyles = styled.div`
             }
         }
         @media (max-width: 939px) {
-            .jumbo-text {
-                display: none;
-            }
+                .jumbo-wrap {
+                    display: none !important;
+                    padding: 0 100px;
+                }
         }
         @media (min-width: 940px) {
-            .jumbo-text {
-                display: flex;
-                flex-direction: row-reverse;
-            }
+                .jumbo-wrap {
+                    padding: 0 160px;
+                    .jumbo-text {
+                        display: flex;
+                        flex-direction: row-reverse;
+                    }
+                }
+            
         }
     }
 

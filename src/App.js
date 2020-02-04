@@ -8,13 +8,17 @@ import Contact from './Components/Contact/Contact';
 import { SideNavStyles } from './Components/SideNav/SideNavStyles';
 import scrollToComponent from 'react-scroll-to-component';
 
+
+
+/*
+THEME COLORS
+Green Treeline: #478559
+Purple baseline: #161748
+Pink highlight: #f95d9b
+Bluewater lowlight: #39a0ca
+*/
 class App extends Component { 
-  constructor(props) {
-    super(props);
-    this.state = {
-      active: false,
-    }
-  }
+  
     render() {
 
       console.log(this.about)
