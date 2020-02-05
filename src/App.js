@@ -30,7 +30,7 @@ class App extends Component {
                     <li className="side-nav-item"><button onClick={() => scrollToComponent(this.intro, { offset: -20, align: 'top', duration: 1500})}><span>01.</span> </button></li>
                     <li className="side-nav-item"><button onClick={() => scrollToComponent(this.about, { offset: -200, align: 'top', duration: 1500})}><span>02.</span> </button></li>
                     <li className="side-nav-item"><button onClick={() => scrollToComponent(this.porfolio, { offset: -20, align: 'middle', duration: 1500})}><span>03.</span> </button></li>
-                    <li className="side-nav-item"><button onClick={() => scrollToComponent(this.contact, { offset: -20, align: 'middle', duration: 1500})}><span>04.</span> </button></li>
+                    <li className="side-nav-item"><button onClick={() => scrollToComponent(this.contact, { offset: 310, align: 'middle', duration: 1500})}><span>04.</span> </button></li>
                   </ul>
                 </div>
                 </SideNavStyles>

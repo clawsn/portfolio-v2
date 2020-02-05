@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { HeaderStyles } from './HeaderStyles';
-import { Typography, Row, Col, Button } from 'antd';
+import { Typography, Row, Col} from 'antd';
 import {useSpring, animated} from 'react-spring'
 import {Spring} from 'react-spring/renderprops'
 // import ProfilePic from '../../assets/images/me.jpg';
@@ -23,7 +23,7 @@ class Header extends Component {
                                 </Title>
                             </div>
                             <div id="resume-btn">
-                            <Button ghost size={size}>Resume</Button>
+                            <button><a href="#0">Resume</a></button>
                             </div>
                         </div>
                         <div className="jumbo-wrap">

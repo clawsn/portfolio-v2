@@ -27,13 +27,29 @@ const HeaderStyles = styled.div`
             }
             #resume-btn {
                 button {
-                    border-radius: 0;
-                    color: white;
-                    &:hover {
-                        border: 1px solid rgba(255,255,255,.4);
-                        background-color: rgba(255,255,255,.1) !important;
+                        border: 3px solid #478559;
+                        padding: 0;
+                        background-color: transparent;
+                        box-shadow: -6px 6px 0 0px #f95d9b, -12px 12px 0px #0e0e2d;
+                        transition: .16s all ease-in-out;
+                        a {
+                            display: block;
+                            text-decoration: none;
+                            padding: .5rem 1rem;
+                            font-size: 1.2em;
+                            font-family: 'DM Sans',sans-serif;
+                            color: #fff;
+                            text-transform: uppercase;
+                            transition: .2s all ease-in-out;
+                        }
+                        &:hover {
+                            box-shadow: 0px 0px #f95d9b;
+                            border: 3px solid #f95d9b;
+                            a {
+                                background-color: #f95d9b;
+                            }
+                        }
                     }
-                }
             }
             }
             .jumbo-wrap {
@@ -81,6 +97,8 @@ const HeaderStyles = styled.div`
                             top: -5px;
                             right: 110px;
                             transform: rotate(6deg);
+                            box-shadow: 7px -7px 0px #f95d9b, 14px -14px 0px #0e0e2d;
+                            
                         }
                     }
                     .line-left {

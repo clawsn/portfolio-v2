@@ -10,11 +10,7 @@ class Contact extends Component {
         return (
             <ContactStyles >
                 <section id="contact-intro">
-                    
-                    <div className="container section-padding">
                         <ContactScene />
-                        
-                    </div>
                 </section>
             </ContactStyles>
         );
@@ -30,12 +26,15 @@ const ContactScene = () => {
                     {/* <div className="numbers four">
                         <Title>04.</Title>
                     </div> */}
-                    <div class="ball">
+                    {/* <div class="ball">
                         <div class="ball__round"></div>
-                    </div>
+                    </div> */}
                     <div className="animated-text">
-                        <Title>Contact Me</Title>
-                        <Paragraph className="text">This site was made with</Paragraph>
+                        <Title>Get In Touch</Title>
+                        <Paragraph className="text">My inbox is always open. <br />Feel free to shoot me an email.</Paragraph>
+                        <button>
+                            <a href="mailto:kyle.clawsn@gmail.com" target="_blank" rel="nofollow noopener noreferrer" class="contact__StyledEmailLink-sc-1m8df4t-3 gHPbIU">Contact me</a>
+                        </button>
                     </div>
                 </div>
             </div>
